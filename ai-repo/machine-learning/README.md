@@ -97,7 +97,7 @@ Clustering pipelines additionally include:
 
 1.  Clone the repository:
 
-git clone https://github.com/studies1592004-cloud/ai-repo/machine-learning.git cd
+git clone https://github.com/studies1592004-cloud/main-branch.git cd
 machine-learning
 
 2.  Install dependencies:
