@@ -1,0 +1,54 @@
+# =============================================================================
+# Computer Vision — requirements.txt
+# =============================================================================
+# Install everything:
+#   pip install -r requirements.txt
+#
+# Minimum Python: 3.9+
+# Recommended:    3.10+ (required for some type-hint syntax in standardized files)
+#
+# GPU (optional but strongly recommended for standardized deep-learning pipelines):
+#   Install the CUDA-enabled PyTorch build from https://pytorch.org/get-started
+#   BEFORE running pip install -r requirements.txt, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# =============================================================================
+
+# ── Core numerical & image processing ─────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.10.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Deep learning ─────────────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── Ultralytics YOLOv8 (detection, segmentation, pose) ────────────────────────
+ultralytics>=8.0.0
+
+# ── Hugging Face Transformers (SegFormer) ─────────────────────────────────────
+transformers>=4.30.0
+
+# ── Object tracking ───────────────────────────────────────────────────────────
+supervision>=0.18.0          # ByteTrack wrapper + annotation utilities
+
+# ── Pose estimation ───────────────────────────────────────────────────────────
+mediapipe>=0.10.0
+
+# ── Dataset management ────────────────────────────────────────────────────────
+roboflow>=1.1.0              # Roboflow dataset download (free API key required)
+
+# ── ML utilities ──────────────────────────────────────────────────────────────
+scikit-learn>=1.3.0          # confusion matrix, classification report
+tqdm>=4.65.0                 # progress bars
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=7.0.0                # test runner
+pytest-cov>=4.0.0            # coverage reports (optional: pytest --cov=standardized)
+
+# ── Jupyter / Colab notebooks ─────────────────────────────────────────────────
+jupyter>=1.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
